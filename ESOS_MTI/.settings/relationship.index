@@ -1,5 +1,16 @@
 [ {
   "baseItem" : {
+    "id" : "_MNVsQGsAEe-Nu6ghSVbwLw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_TQLyoM4UEe2ly-ax8NCabw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_O1SEUEfIEe63Y9qo9nrjNg",
     "version" : "0.1",
     "type" : "job"
