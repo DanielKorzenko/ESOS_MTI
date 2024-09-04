@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:version="2.0">
-  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/SPOT/aws_skysql_chain.pem" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.mariadb.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:+zczUJ2wQeTEI1zB0FnM+4ATGHtsTYGjFrtvq0iU8KsdTSbOQiz6ENk/KF7zYdxwdPAwIBkq" Port="5001" ProductId="MYSQL" SID="ESOS_MTI" SQLMode="false" ServerName="esgclouddatabase-db00007438.mdb0002418.db1.skysql.net" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mariadb://esgclouddatabase-db00007438.mdb0002418.db1.skysql.net:5001/ESOS_MTI?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/SPOT/aws_skysql_chain.pem" UiSchema="" Username="DB00007438" dataPackage="_M-QT4EddEe63Y9qo9nrjNg" dbVersionString="MARIADB" id="_TQLyoM4UEe2ly-ax8NCabw" label="MariaDB_ESGroup_ESG" name="MariaDB_ESGroup_ESG" supportNLS="false" xmi:id="_TQetkM4UEe2ly-ax8NCabw">
+  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.mariadb.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:Cw3Gkz9odsoCB79SV0r164CH4Di0aBF82w/l8K0BASPJOzrFXe0o6MJG8MzrCo1gnq9b" Port="5001" ProductId="MYSQL" SID="ESOS_MTI" SQLMode="false" ServerName="dbpwf39963597.sysp0000.db1.skysql.com" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mariadb://dbpwf39963597.sysp0000.db1.skysql.com:5001/ESOS_MTI?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem" UiSchema="" Username="dbpwf39963597" dataPackage="_ldSXcFUQEe-gw5XDVnZ0Hw" dbVersionString="MARIADB" id="_TQLyoM4UEe2ly-ax8NCabw" label="MariaDB_ESGroup_ESG" name="MariaDB_ESGroup_ESG" supportNLS="false" xmi:id="_TQetkM4UEe2ly-ax8NCabw">
     <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_sR6UsWv-Ee2JJ5fUO3Lfig"/>
     <taggedValue tag="package filter" value="" xmi:id="_sSNPoGv-Ee2JJ5fUO3Lfig"/>
     <taggedValue tag="Status" value="" xmi:id="_sSNPoWv-Ee2JJ5fUO3Lfig"/>
@@ -9,19 +9,19 @@
     <taggedValue tag="Author" value="" xmi:id="_sSNPpWv-Ee2JJ5fUO3Lfig"/>
     <taggedValue tag="otherParameter" xmi:id="_sSNPpmv-Ee2JJ5fUO3Lfig"/>
     <taggedValue tag="DB ProductName" value="MariaDB" xmi:id="_sT__YGv-Ee2JJ5fUO3Lfig"/>
-    <taggedValue tag="DB ProductVersion" value="10.6.8-4-MariaDB-enterprise-log" xmi:id="_sT__YWv-Ee2JJ5fUO3Lfig"/>
+    <taggedValue tag="DB ProductVersion" value="10.6.15-10-MariaDB-enterprise-log" xmi:id="_sT__YWv-Ee2JJ5fUO3Lfig"/>
     <taggedValue tag="DB IdentifierQuoteString" value="`" xmi:id="_sT__Ymv-Ee2JJ5fUO3Lfig"/>
-    <parameters key="CONN_PARA_KEY_USERNAME" value="DB00007438" xmi:id="_sR6Usmv-Ee2JJ5fUO3Lfig"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="dbpwf39963597" xmi:id="_sR6Usmv-Ee2JJ5fUO3Lfig"/>
     <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_-PcjwM4TEe2ly-ax8NCabw"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_TQetkM4UEe2ly-ax8NCabw" name="ESOS_MTI" xmi:id="_M-QT4EddEe63Y9qo9nrjNg"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_de9cd956-af60-4be2-9164-76b4f777f992"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gMVKRjd2UumCNBaPJXRnroFA7v0bW0l8xasXlyUEwQVJ/8ze8xgjQ7SEM+SoES9v1XVyb/EzstYT&#13;
-IfYc6Ucr+g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_26b46424-e439-4e89-95a7-eac053ad18a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>guxI4a600t0FvDlvrHAFU/5FQ/FPLwJmvSb2PhANEe42mjzy5nhmrsoV0flXaQ+n3IHGn06iOzNB&#13;
-/c8P6PWpBA==</DigestValue></Reference></SignedInfo><SignatureValue>AzzLEc2MvUG5gbs1bB6p4vECiRWO7jLVR4LFrDqk4kMy/+7etxLUHnFyCN+10LLMVOt2xxm1xw6Y&#13;
-16YZCYlUcfQBdYwkVC5EUxSI2w/YowH5ju9YDCkUjHnLzHJMXiq6Ttd6XlQdGMDRof17ZeOXKb77&#13;
-GdQL5Fbm9Fkz8keDI1h+Q5ZonArAgxsSOLHsO0GQ5yigmx/u4rdctsjLfMrwp8VFyFl9nAKonX3E&#13;
-Ap8DqN9XCn9XjUoZf+gq0suIoFQmy+j6fzfI/3Zpl9aUHK6A9govBHghjkR+2S59XwAj4L7HXWXV&#13;
-NoPZrtTk+HrTOcTEGAKya4YguiJXpy05JXTI7Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <orgomg.cwm.resource.relational:Catalog dataManager="_TQetkM4UEe2ly-ax8NCabw" name="ESOS_MTI" xmi:id="_ldSXcFUQEe-gw5XDVnZ0Hw"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_acc15fb8-631c-4a49-8444-37c7a4c3f62f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>T1UIMXnOk+AkMPr2kwWEQ2O+MVGl500q5b90SXK91yyB5ST8FU+DNdrxE9G385EZNgmbL3LTwdz8&#13;
+Q9yKlOzGDg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_66223473-b0bc-4c29-a824-9c85edf252ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c4useHh2zgQ6JyNV3TIoe1I+moNOexBEjKeWqBoPKtO20t25ycqHKoLZjZj1d5xGeC97Ai5D+0Jb&#13;
+PCDs2ACf0A==</DigestValue></Reference></SignedInfo><SignatureValue>Unm5pmOpZv84xpid3xQIofXlzXGMEeYxU8vFNVLDOuEBZ9lMgb8E0yg0l9IEnq4lgjAiS/BEkGjk&#13;
+zkNlp9RDIhu/nPm7i2uSm0hDpAXJVIMrqQ2u6TNZftTLIN9j5TegHmzj+mrdAf1ImrUjbwofNrx5&#13;
+Ljhj+Llxs9KkJNewiOM1XBLfvTaoSQ1L+x9y0I3BPYmYJyTssXXcj6UdtXzmebf7iUHoPVgHyXQ9&#13;
+wiV8Gt3i25EBXncYPAIWl4HvI/ojEQDBV7zivhJ2qWaBBvuXg3Pn6u12OskrKMdwRE6GKJMZVEim&#13;
+hchGopzVVaBTrOBzFJpo8FNhxhuaLCroXZTtFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -43,4 +43,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_26b46424-e439-4e89-95a7-eac053ad18a7" Target="#_de9cd956-af60-4be2-9164-76b4f777f992"><Timestamp>2023-08-30 17:46:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_66223473-b0bc-4c29-a824-9c85edf252ee" Target="#_acc15fb8-631c-4a49-8444-37c7a4c3f62f"><Timestamp>2024-08-07 22:58:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

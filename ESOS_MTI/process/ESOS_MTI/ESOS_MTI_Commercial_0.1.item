@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -97,16 +97,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_VIjDgEdXEe6VLP9l-LD9JA" name="DataOperation"/>
-    <routinesParameter id="_VIrmYEdXEe6VLP9l-LD9JA" name="Mathematical"/>
-    <routinesParameter id="_VIy7IEdXEe6VLP9l-LD9JA" name="Numeric"/>
-    <routinesParameter id="_VI7eAEdXEe6VLP9l-LD9JA" name="Relational"/>
-    <routinesParameter id="_VHsH4EdXEe6VLP9l-LD9JA" name="SQLike"/>
-    <routinesParameter id="_VJDZ0EdXEe6VLP9l-LD9JA" name="StringHandling"/>
-    <routinesParameter id="_VJKukEdXEe6VLP9l-LD9JA" name="TalendDataGenerator"/>
-    <routinesParameter id="_VJSDUEdXEe6VLP9l-LD9JA" name="TalendDate"/>
-    <routinesParameter id="_VJhT4EdXEe6VLP9l-LD9JA" name="TalendStringUtil"/>
-    <routinesParameter id="_VJbNQEdXEe6VLP9l-LD9JA" name="TalendString"/>
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
@@ -175,11 +165,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;esgclouddatabase-db00007438.mdb0002418.db1.skysql.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;dbpwf39963597.sysp0000.db1.skysql.com&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;5001&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ESOS_MTI&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;DB00007438&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+tFSz26K0HbhQY5T2aRQu7jCGqjM4ubQc9ppIxgh35ON7vlBre+yS1LAME5jZPuVMN8t7sFLB5U="/>
+    <elementParameter field="TEXT" name="USER" value="&quot;dbpwf39963597&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ShLR+X6S2KSV8kTQD3cqLhxsmDXGTmWAjJSoNKlefnQxAfcJCwKQjIrGyOjxz2Gl+OnOp+M="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ESOS_MTI_Revenue&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -188,7 +178,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/SPOT/aws_skysql_chain.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -272,12 +262,12 @@
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;esgclouddatabase-db00007438.mdb0002418.db1.skysql.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;dbpwf39963597.sysp0000.db1.skysql.com&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;5001&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ESOS_MTI&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;DB00007438&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:x7AHdY3v2JU2PO46ZgYZFtdAJyRosWFVM5Nookl5oLlm3r1hiwK/YXEVNJeHBFomVwN3QvgABMA="/>
+    <elementParameter field="TEXT" name="USER" value="&quot;dbpwf39963597&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ptXyah6uEcH/vEwEE3/nfUoEKYgchqWALkvbvvw21rZV4Jjix9PwF//B3R59sprNG8RXA6c="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ESOS_MTI_Revenue&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -287,7 +277,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/SPOT/aws_skysql_chain.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -324,13 +314,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_94182b15-b4eb-42ad-8525-83d7ba7b5bf3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3FMuaYDKnpTFQIoRvQ74LBH0oep1KxAcjySA4jTTozbxmi/8OhPyc628XGZ9nAyxEMakOjwgpLuh&#13;
-jazOvsc8dQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5a53578d-242f-44d3-8797-4ed01cc59f5b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w+nbzCaQYjImxIYYD3yQ3DyTmqKt036hGimpR4yDpognQHVaKK+KKIyhaRFxNkcog5PT2IV7dn4z&#13;
-Eyfua5Cy5Q==</DigestValue></Reference></SignedInfo><SignatureValue>ku//7bTOOYFL/Blkk38GILQTvS5VMoxbcVjPfAM11cyydlOE7xNrl6NTyK4UrTjT/M/+/1Dv8RPB&#13;
-bvoUrlkWzzBm+aOqaniHu8bx1v+A7uY0qLJACr105C3KKfEJCyj6oEosDjFhqKa5R4Qb6QpOSBAM&#13;
-QqS3y1OJqYwr6cfFxO1VtYlhaqYu7+iBf4pcMkngKuTK7WiPDvIMbi0yqXYXaD2HLKvFkmIFD6Dy&#13;
-pbN+Er3x2yckebkA/eRzUQMMsgNUnsJb7tyMT+NAlU/JUi9ZGy7coQuoB0yaY9a2hZy7P40OGLm5&#13;
-nDqrEKE/159gAJLhia2dAme96+D0k9ctqcgFkg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a41ae1c2-b853-4dbe-9e10-59a590e0870b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4y8J1Pr44ZakIg0Z0TWWy+m+jaT1Byk7cM0mKNTR+lbSbzWzXWMeccYtVb9youEvZwBWwRAfAGVz&#13;
+QBqGQrxv8A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_de952594-fc14-477e-8933-ef2401f1fd96"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GWTBW6LIu7IvULC0nJowgLdfW7rJmW1IyEx5KZwPZfUlX0pTBVb9iDvtdz9fDuHYpVZjptT4xBcC&#13;
+VXWhkUVh5w==</DigestValue></Reference></SignedInfo><SignatureValue>etyLuBtr7kVxGHxvcyvjo2D7es+84HAAAii934R/1Y41XvxlB3rmpZwdjNR7+JEbASEujge13LkN&#13;
+XwqX5OGmdl+8DRhdzNQhT/+cDN52dzIOxbMHGO9R+sc6Z/G6jYUwbU8EYYdS9bxVRG2KOkpEMb59&#13;
+XNpjd6O7ZYSMXuk9fNh6cpkYBAxvxBBK3z0oJb6Gf0AKmU1Ac/GJYtcAmKumTpUc78waY9sZjSaX&#13;
+njuT0PFVmaN7YicLvYHO4Gj/lzoExLCG4yIpfYHayflHEeT1MD57QuGF8Dh5YeBhhR2zPAhOjNKg&#13;
+IfOiG9DFhsrHcBHkuW4Q3yQ2Z/HxH+O6Tz0aEA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -352,4 +342,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5a53578d-242f-44d3-8797-4ed01cc59f5b" Target="#_94182b15-b4eb-42ad-8525-83d7ba7b5bf3"><Timestamp>2024-08-07 22:49:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_de952594-fc14-477e-8933-ef2401f1fd96" Target="#_a41ae1c2-b853-4dbe-9e10-59a590e0870b"><Timestamp>2024-08-07 22:58:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
