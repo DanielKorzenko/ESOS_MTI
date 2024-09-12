@@ -697,7 +697,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;      sh.[No_] as Order_No&#13;&#10;&#9;  , cs.No_ as Client_code&#13;&#10;      , cs.Name&#13;&#10;&#9;  , sh.[Order Date]&#13;&#10;&#9;  , sl.[Line No_]&#13;&#10;&#9;  , 1 as version&#13;&#10;&#9;  , sl.No_ as Item_code&#13;&#10;&#9;  , sl.Description&#13;&#10;&#9;  , sl.Quantity&#13;&#10;&#9;  , sl.[Outstanding Quantity]&#13;&#10;&#9;  , sl.[Qty_ to Invoice]&#13;&#10;&#9;  , sl.[Quantity Invoiced]&#13;&#10;&#9;  , sl.[Qty_ to Ship]&#13;&#10;&#9;  , sl.[Quantity Shipped]&#13;&#10;&#9;  , sl.[Shipment No_]&#13;&#10;&#9;  , sl.[Unit Price]&#13;&#10;&#9;  , sl.[VAT _]&#13;&#10;&#9;  , sl.[Line Discount _]&#13;&#10;&#9;  , sl.[Line Discount Amount]&#13;&#10;&#9;  , sl.Amount&#13;&#10;&#9;  , sl.[Amount Including VAT]&#13;&#10;&#9;  , sl.[Requested Delivery Date]&#13;&#10;&#9;  , sl.[Promised Delivery Date]&#13;&#10;&#9;  , [Planned Delivery Date]&#13;&#10;&#9;  , sl.[Planned Shipment Date]&#13;&#10;&#9;  , sl.[Shipment Date]&#13;&#10;&#9;  , sh.[Shipment Date] as Original_Shipment_Date&#13;&#10;&#9;  , sl.[Location Code]&#13;&#10;&#9;  , sh.[Project Name]&#13;&#10;, sh.[Hold] as[On Hold]&#13;&#10;, sl.[Revised Shipment Date]&#13;&#10;  FROM [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Header] sh&#13;&#10;  left join [MTI3C].[dbo].[MTI Whirlpools, Inc$Customer] cs on cs.No_ = sh.[Sell-to Customer No_]&#13;&#10;  left join  [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Line]  sl on sl.[Document No_] = sh.No_&#13;&#10;  left join [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Cr_Memo Line] cml on cml.[Document No_] = sh.No_ and cml.[Line No_] =sl.[Line No_]&#13;&#10;  left join [dbo].[MTI Whirlpools, Inc$Sales Cr_Memo Header] cmh on cmh.[Applies-to Doc_ No_] = sh.No_&#13;&#10;where DATEPART(YEAR, sh.[Order Date]) &gt; 2021 &#13;&#10;  &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;      sh.[No_] as Order_No&#13;&#10;&#9;  , cs.No_ as Client_code&#13;&#10;      , cs.Name&#13;&#10;&#9;  , sh.[Order Date]&#13;&#10;&#9;  , sl.[Line No_]&#13;&#10;&#9;  , 1 as version&#13;&#10;&#9;  , sl.No_ as Item_code&#13;&#10;&#9;  , sl.Description&#13;&#10;&#9;  , sl.Quantity&#13;&#10;&#9;  , sl.[Outstanding Quantity]&#13;&#10;&#9;  , sl.[Qty_ to Invoice]&#13;&#10;&#9;  , sl.[Quantity Invoiced]&#13;&#10;&#9;  , sl.[Qty_ to Ship]&#13;&#10;&#9;  , sl.[Quantity Shipped]&#13;&#10;&#9;  , sl.[Shipment No_]&#13;&#10;&#9;  , sl.[Unit Price]&#13;&#10;&#9;  , sl.[VAT _]&#13;&#10;&#9;  , sl.[Line Discount _]&#13;&#10;&#9;  , sl.[Line Discount Amount]&#13;&#10;&#9;  , sl.Amount&#13;&#10;&#9;  , sl.[Amount Including VAT]&#13;&#10;&#9;  , sl.[Requested Delivery Date]&#13;&#10;&#9;  , sl.[Promised Delivery Date]&#13;&#10;&#9;  , [Planned Delivery Date]&#13;&#10;&#9;  , sl.[Planned Shipment Date]&#13;&#10;&#9;  , sl.[Shipment Date]&#13;&#10;&#9;  , sh.[Shipment Date] as Original_Shipment_Date&#13;&#10;&#9;  , sl.[Location Code]&#13;&#10;&#9;  , sh.[Project Name]&#13;&#10;, sh.[Hold] as[On Hold]&#13;&#10;, sl.[Revised Shipment Date]&#13;&#10;, lc.Comment&#13;&#10;  FROM [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Header] sh&#13;&#10;  left join [MTI3C].[dbo].[MTI Whirlpools, Inc$Customer] cs on cs.No_ = sh.[Sell-to Customer No_]&#13;&#10;  left join  [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Line]  sl on sl.[Document No_] = sh.No_&#13;&#10;  left join [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Cr_Memo Line] cml on cml.[Document No_] = sh.No_ and cml.[Line No_] =sl.[Line No_]&#13;&#10;  left join [dbo].[MTI Whirlpools, Inc$Sales Cr_Memo Header] cmh on cmh.[Applies-to Doc_ No_] = sh.No_&#13;&#10;  left join [MTI3C].[dbo].[MTI Whirlpools, Inc$Sales Comment Line] lc on lc.[Line No_] = sl.[Line No_] and  lc.No_ = sh.No_ &#13;&#10;where DATEPART(YEAR, sh.[Order Date]) &gt; 2021&#13;&#10;  &quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -770,6 +770,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Revised_Shipment_Date"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comment"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
@@ -790,23 +792,24 @@
       <column comment="" defaultValue="" key="false" length="38" name="Quantity_Invoiced" nullable="true" originalDbColumnName="Quantity Invoiced" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Qty__to_Ship" nullable="true" originalDbColumnName="Qty_ to Ship" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Quantity_Shipped" nullable="true" originalDbColumnName="Quantity Shipped" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Shipment_No_" nullable="true" originalDbColumnName="Shipment No_" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Shipment_No_" nullable="true" originalDbColumnName="Shipment No_" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Unit_Price" nullable="true" originalDbColumnName="Unit Price" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="VAT__" nullable="true" originalDbColumnName="VAT _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Line_Discount__" nullable="true" originalDbColumnName="Line Discount _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Line_Discount_Amount" nullable="true" originalDbColumnName="Line Discount Amount" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Amount" nullable="true" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Amount_Including_VAT" nullable="true" originalDbColumnName="Amount Including VAT" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Requested_Delivery_Date" nullable="true" originalDbColumnName="Requested Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Promised_Delivery_Date" nullable="true" originalDbColumnName="Promised Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Planned_Delivery_Date" nullable="true" originalDbColumnName="Planned Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Planned_Shipment_Date" nullable="true" originalDbColumnName="Planned Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Shipment_Date" nullable="true" originalDbColumnName="Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Original_Shipment_Date" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Location_Code" nullable="true" originalDbColumnName="Location Code" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Project_Name" nullable="false" originalDbColumnName="Project Name" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Requested_Delivery_Date" nullable="true" originalDbColumnName="Requested Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Promised_Delivery_Date" nullable="true" originalDbColumnName="Promised Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Planned_Delivery_Date" nullable="true" originalDbColumnName="Planned Delivery Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Planned_Shipment_Date" nullable="true" originalDbColumnName="Planned Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Shipment_Date" nullable="true" originalDbColumnName="Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Original_Shipment_Date" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Location_Code" nullable="true" originalDbColumnName="Location Code" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Project_Name" nullable="false" originalDbColumnName="Project Name" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="Revised_Shipment_Date" nullable="true" originalDbColumnName="Revised Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Revised_Shipment_Date" nullable="true" originalDbColumnName="Revised Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="Comment" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
@@ -855,10 +858,11 @@
       <column comment="" key="false" length="30" name="Project_Name" nullable="false" originalDbColumnName="Project Name" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Revised_Shipment_Date" nullable="true" originalDbColumnName="Revised Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Comment" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.Order_No" name="Order_No" type="id_String"/>
@@ -892,6 +896,7 @@
         <mapperTableEntries expression="row3.Project_Name" name="Project_Name" type="id_String"/>
         <mapperTableEntries expression="row3.On_Hold" name="On_Hold" type="id_Short"/>
         <mapperTableEntries expression="row3.Revised_Shipment_Date " name="Revised_Shipment_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.Comment " name="Comment" nullable="true" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getCurrentDate() " name="Last_Refresh_Timestamp" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
@@ -926,6 +931,7 @@
         <mapperTableEntries name="Project_Name" type="id_String"/>
         <mapperTableEntries name="On_Hold" type="id_Short"/>
         <mapperTableEntries name="Revised_Shipment_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Comment" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1117,6 +1123,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comment"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Last_Refresh_Timestamp"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1161,8 +1172,9 @@
       <column comment="" key="false" length="23" name="Original_Shipment_Date" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Location_Code" nullable="true" originalDbColumnName="Location Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Project_Name" nullable="false" originalDbColumnName="Project Name" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Revised_Shipment_Date" nullable="true" originalDbColumnName="Revised Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Comment" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
@@ -1195,8 +1207,9 @@
       <column comment="" key="false" length="23" name="Original_Shipment_Date" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Location_Code" nullable="true" originalDbColumnName="Location Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Project_Name" nullable="false" originalDbColumnName="Project Name" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="On_Hold" nullable="false" originalDbColumnName="On Hold" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Revised_Shipment_Date" nullable="true" originalDbColumnName="Revised Shipment Date" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Comment" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2886,6 +2899,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="Revised_Shipment_Date"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Comment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
@@ -2950,13 +2966,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0b037226-9359-4075-841a-cea4c13d24d3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bumPjXjueWxv3+WNXNlxgCHyCbZ6jGntunzWEs4a/x3FMcaF3lZEjzlSSxTJGE3gjnPL2uoa8cOP&#13;
-2Sp9dW/nFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2e0696a9-09da-4fe9-a898-1ee4607d91be"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZNDXdjKT9aw4wS5ZmlBXrch8Y1AJlGc6J/otLfSgI6JLNWgNfJsAkLuVUDAKbIOzvkL1rfLwU5yW&#13;
-fJVfKWR+1A==</DigestValue></Reference></SignedInfo><SignatureValue>Bg9HwtteQsQ+HcyaRCVWT/NvAuGruFKLNByqLAObJng8VB6LA8YBdmEYtCW5KVUFLVr8MHaiobp1&#13;
-QNsfBKOmikQeq1Sgk4JI2a7eP0oAdhS2kTqEzzYClLu02984lgmhH7S9S5GJXkokUNwX9wmWxzg0&#13;
-Lp/7jFgvukMN8DTV23Ewp677UQgNmqHF+JuiNhGWSxaO7IeSNoBIRhWjToJEgZi+JBEbnKJEGIwB&#13;
-aV66Wl497HnwR73c11dPrPL2pyTAfNSpVFh2/OAY3ti1atqZ+FwCAVj5uBfLR0qAzQI6R58wAlPh&#13;
-83sZMl+f/ABDRiJsVrhDpPYjQY8jRJHcAZDKZQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b0fc94f8-ed0e-4657-9458-20eb44178993"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zc9UlL7nfK6zFGwbBq/qh6Nt6fclv8N/NQ/F6ZKWtwbPQF/lVf2D3BhYpI7zQYDrRMbKo4UNLpe9&#13;
+Wgt0a4pKDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_65319ef6-aa9d-416e-b9de-a5cb1bfdf01b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zZTfetjC0/0LlpiCZD+jBE5DrFkNmActu/dRPMjdHSGe1GgLSQ3ucZDMIur19gaPRVjQzSMylHSZ&#13;
+nBe75iX8NQ==</DigestValue></Reference></SignedInfo><SignatureValue>NbOAo5sSwBtozLL6zBAE0FAZ5DoIcTQANF02nfl4cLZtx+vau6dpg/kqflE6ln36miPRvk5wBY8q&#13;
+Dbci7BWQnf1n2qxYWyUU/99G3ydrky44ok33u8sy3Kj0pThz1RA4j0ufRjioGuEx9CYvAO6B3N5D&#13;
+LimRQLwBCJ/lvLU18RNBXlPRACLP1l04+VEKWsG1z4tjfzW6an5LauMlJE/ha8RjPRmUe4cprjJR&#13;
+DGNA26GDX8QKp0oiWkarG+mmajl473t4XIMrYnlnm+UhwiP4XFcLS+zAkP7Dl8TQb/ZGAqofx/xo&#13;
+WTc/Do0KG/26SER/SXyoaOuujVUXp6oqKPxP/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2978,4 +2994,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2e0696a9-09da-4fe9-a898-1ee4607d91be" Target="#_0b037226-9359-4075-841a-cea4c13d24d3"><Timestamp>2024-07-22 06:07:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_65319ef6-aa9d-416e-b9de-a5cb1bfdf01b" Target="#_b0fc94f8-ed0e-4657-9458-20eb44178993"><Timestamp>2024-09-12 21:44:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
