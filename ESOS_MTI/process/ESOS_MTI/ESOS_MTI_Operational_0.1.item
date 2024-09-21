@@ -280,7 +280,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out3" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.plDocNo" name="plDocNo" nullable="true" type="id_String"/>
@@ -368,7 +368,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -839,7 +839,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.Creation_Date " name="Creation_Date" type="id_Date"/>
@@ -940,7 +940,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1233,7 +1233,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="copyOfout4_0" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.Posting_Date" name="Posting_Date" type="id_Date"/>
@@ -1301,7 +1301,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1721,7 +1721,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out2" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.No_" name="No_" type="id_String"/>
@@ -1849,7 +1849,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -2323,7 +2323,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="copyOfout4" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.timestamp" name="timestamp" type="id_String"/>
@@ -2373,7 +2373,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -2663,7 +2663,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -3317,7 +3317,7 @@
       <column comment="" key="false" length="-1" name="Last_Refresh_Timestamp" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out4" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row6.Entry_No_" name="Entry_No_" type="id_Integer"/>
@@ -3485,7 +3485,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -4245,7 +4245,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -4826,13 +4826,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ea17ccfb-5654-4773-9abf-20ff298bb1f3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QhECmc93Y7hH57gUfk2e1+Mcg7C63rrBDQldEpYzMzNQ3rHuNLF4N8UQ03NLfgNwxtJ1WAoopdki&#13;
-gtjCl4nj0Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d8de4119-e4d8-4718-9b16-a561fe527a2e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YALRme35jLM7DKnPP4wuN4q1BVXRw01D9kVEm9loAcyo31Mw9vSXxf0gd4mE3JDXFkz2E+RPhwoo&#13;
-uTkj5xVjaA==</DigestValue></Reference></SignedInfo><SignatureValue>IiT6poAdIEGnPzPuK/ZGxrXVyx8mXP9u3+VHlqQmsXU89g/aIMIfCkCiXevn70O7EW7wD85Co72G&#13;
-SITsHWkcxph4IDQKy/1zp0Bv05hjs5hEPoYu9DQ0ubYvHwD12iLRLJKv3hdhz3TwVNopNy78fLna&#13;
-GyVV5qj+LTwWVhw/RSn+exUMzr4o8TdVS64VICe5LWbYMUCtl2xawCFdgXPdT6S9Zg5VDeWwbsRF&#13;
-OnlUthArKLxyuij8TUk2CvpuOuzhfbisJ4E+16XiXnVyL1gODidYiEoqK1H9BHPPy3Q1NSQJ2OkG&#13;
-FDQAJeGAoWs9tACzwCRqrf2jN/Q5AIyrkuZsWQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b701b863-8ccf-4c32-8c47-5b37c6fafd53"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hjPLfZcgXOGyffGC2EDcsoM2g642sxeLwzLJmtnHHrjKJzUiQ2bun3A6Eh2rypzWrTDRgM7eQr0b&#13;
+39KoixRw4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0507ff0-d86e-4a7a-b168-d027d527ec33"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MDEWQ5nN1+pdvv1HFXYXNsBaZPZFR7T0f8pDVO1tvXDnqRBStsD70vQKp9Yp5WNCw799jzaBx23n&#13;
+MVVgRCLi5Q==</DigestValue></Reference></SignedInfo><SignatureValue>Ajke4vgA/v1t1wVCacGowEebKrEx/z1Xidm0I1e+qkfr57cCfJ92kcRJQIFxku3I+PLmhsI2MpQU&#13;
+lOHPLx2vqrifA/yksN+OvAgsl99VW3M1lZjpEZv9k4VFIJHrxK9Cpf02x2/OFa5C1sH1QqAMD9VH&#13;
+m7LeL3vDXXRjR+UZtbKTsMnUWXKY/vMoz/UoJ+RiFhb2Fd3xyzWwRpvs6TlsVY4j7wsiaVbkIF1S&#13;
+0DnHAnNoXFrH6DzL5hD3S4jWXq6jI7nxbYakYoYS/qZYgd/xhsDwBXP6zkwxs0Po5BPg68LFSwca&#13;
+JVUl90Eguq09oVSaK3MgOeMu1BV7qDGbQn4vPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -4854,4 +4854,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d8de4119-e4d8-4718-9b16-a561fe527a2e" Target="#_ea17ccfb-5654-4773-9abf-20ff298bb1f3"><Timestamp>2024-06-16 06:49:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0507ff0-d86e-4a7a-b168-d027d527ec33" Target="#_b701b863-8ccf-4c32-8c47-5b37c6fafd53"><Timestamp>2024-09-21 12:02:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

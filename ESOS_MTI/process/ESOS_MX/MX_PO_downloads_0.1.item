@@ -247,7 +247,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ENABLE_STREAM" show="false" value="false"/>
@@ -439,7 +439,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -655,7 +655,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ENABLE_STREAM" show="false" value="false"/>
@@ -845,7 +845,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;useSsl&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&amp;passwordCharacterEncoding=utf8&amp;sslMode=VERIFY_CA&amp;serverSslCert=C:/MariaDB/skysql_chain_2024.pem&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -983,13 +983,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_00f55df7-5f62-4d49-aa48-350aa3fb8553"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3ygfma8aOnVlIUZOrOmgkhgEvnaOGw3MbJ0iUpFWg+2C2b0seoTdviPG60UKvRprwsGU1bjfio6Q&#13;
-7+iSXG0zug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3daa1892-2d23-4f99-8937-46b63a25776b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cHy6XFR6jEoMP0D5nGpvm5H3itMMu2VEn1JrfGz5FNB/QWuCJwv+l8fCuobZJIF2EYwiaWMhRPhC&#13;
-vKrLkeUH3A==</DigestValue></Reference></SignedInfo><SignatureValue>pDQtPOpcOTU39WEVpkvZkZjrQDadHPDLNXTxr9lsA5BvQmOiXMqkeep7KgFbJ5ELbcJnKysd9g6m&#13;
-CyDYfPIPPlh4P1Zu1r1k256Ct21lMjvUu85MV5vWpLWjLoj6WB7BdzFikShw0aiFjA6o++Mi6HBo&#13;
-nTBjSWjabwM4uLkBN8Vw/F3f5dWpugrz45OIy4II21S9vzeNCeyFO93vXAzOLyTJ0qolj8R7uyP7&#13;
-e0+YHRFEBiCFT9JdwOdrsmiA7jMY0MgNRxHbLGkbs4+D8UXQ3BSfKykPH5LdeYs25GkYbN9vAHN4&#13;
-iKFxJCXx9mrlWAmtzzbFoZcReTu1RIzmm5X8Fw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_96bbd1ac-37e0-4a46-b6a6-eb37fe0b1fbc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>m+Pv7Y2MsRAXUQNW3/1Kxr6IiYpcdMLkQJ+z2lVjZswrlsF2NO91HfHpbfbGfI/GBVA1lsFOkBjZ&#13;
++HP3hjABfQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c95eba57-c1c1-4fbe-bccb-17100c22d59e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kaO4v09trMPxiopnuJ5FlZZ5XTu/d4ij595Q9gldHTsJTNFzI5I0BcxyuUkkpuncWRc/2LqDs7OI&#13;
+b+kmot1Ueg==</DigestValue></Reference></SignedInfo><SignatureValue>WvQV6ocyfHLAqlVUVKs8zvLiA37CcUcWYCO2HE+7EIdax00ogNJnlkmMJiIjGmYeVQSyY7RkKFXC&#13;
+TBg36yjpNwg3nbyvHD+AFExKqyl8VtvGBBZ29dT84rr47Qh70pxL4qITxcMGz6mp0wlUL3M7p1LX&#13;
+pMYoQ1uMp4c/yWNDBIDkGq88nmU6aOELdMGUeRB6IJsGd/pF2+1utnc37qUsqJrzLm2aHKJn5gns&#13;
+1ry3X1SniIsK8hUJWsQ1BEv9jjN68FoV/Kf+x/6RTWHevja8k3wtrKD5bJuihSEtHyvw7nbU7BTR&#13;
+yKXco1dsxyCPutO/FSemqeo/MqPJpnGBNZgMJQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1011,4 +1011,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3daa1892-2d23-4f99-8937-46b63a25776b" Target="#_00f55df7-5f62-4d49-aa48-350aa3fb8553"><Timestamp>2024-02-27 12:35:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c95eba57-c1c1-4fbe-bccb-17100c22d59e" Target="#_96bbd1ac-37e0-4a46-b6a6-eb37fe0b1fbc"><Timestamp>2024-09-21 12:02:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
