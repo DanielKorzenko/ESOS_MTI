@@ -97,20 +97,19 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_VIjDgEdXEe6VLP9l-LD9JA" name="DataOperation"/>
-    <routinesParameter id="_VIrmYEdXEe6VLP9l-LD9JA" name="Mathematical"/>
-    <routinesParameter id="_VIy7IEdXEe6VLP9l-LD9JA" name="Numeric"/>
-    <routinesParameter id="_VI7eAEdXEe6VLP9l-LD9JA" name="Relational"/>
-    <routinesParameter id="_VHsH4EdXEe6VLP9l-LD9JA" name="SQLike"/>
-    <routinesParameter id="_VJDZ0EdXEe6VLP9l-LD9JA" name="StringHandling"/>
-    <routinesParameter id="_VJKukEdXEe6VLP9l-LD9JA" name="TalendDataGenerator"/>
-    <routinesParameter id="_VJSDUEdXEe6VLP9l-LD9JA" name="TalendDate"/>
-    <routinesParameter id="_VJhT4EdXEe6VLP9l-LD9JA" name="TalendStringUtil"/>
-    <routinesParameter id="_VJbNQEdXEe6VLP9l-LD9JA" name="TalendString"/>
+    <routinesParameter id="_ej2TUnHAEe-6Eenzif1IsA" name="SQLike"/>
+    <routinesParameter id="_ekpkkHHAEe-6Eenzif1IsA" name="Numeric"/>
+    <routinesParameter id="_ek9toHHAEe-6Eenzif1IsA" name="TalendDataGenerator"/>
+    <routinesParameter id="_ekhBsHHAEe-6Eenzif1IsA" name="Mathematical"/>
+    <routinesParameter id="_elQBgHHAEe-6Eenzif1IsA" name="TalendStringUtil"/>
+    <routinesParameter id="_ekxgYHHAEe-6Eenzif1IsA" name="Relational"/>
+    <routinesParameter id="_eka7EHHAEe-6Eenzif1IsA" name="DataOperation"/>
+    <routinesParameter id="_ek4OEHHAEe-6Eenzif1IsA" name="StringHandling"/>
+    <routinesParameter id="_elKh8HHAEe-6Eenzif1IsA" name="TalendString"/>
+    <routinesParameter id="_elD0QHHAEe-6Eenzif1IsA" name="TalendDate"/>
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -164,7 +163,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -211,7 +209,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -256,7 +253,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -348,7 +344,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -396,7 +391,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -467,7 +461,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -524,7 +517,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -616,7 +608,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -976,7 +967,7 @@
       <column comment="" defaultValue="" key="false" length="3" name="Price_Includes_VAT" nullable="false" originalDbColumnName="Price Includes VAT" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="VAT_Bus__Posting_Gr___Price" nullable="false" originalDbColumnName="VAT Bus_ Posting Gr_ (Price)" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Gen__Prod__Posting_Group" nullable="false" originalDbColumnName="Gen_ Prod_ Posting Group" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="2147483647" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="IMAGE" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Country_Region_of_Origin_Code" nullable="false" originalDbColumnName="Country_Region of Origin Code" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="3" name="Automatic_Ext__Texts" nullable="false" originalDbColumnName="Automatic Ext_ Texts" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="No__Series" nullable="false" originalDbColumnName="No_ Series" originalLength="-1" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
@@ -1066,7 +1057,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_5"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -1079,7 +1069,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;dbpwf39963597&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zIKKScKNlZmf3TDZ6f4vVwxfzYHCnShck+eIgMBiJLZQIiWoD7SAUT01prFnMwHETTiX/vQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ESOS_MTI_Items&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
@@ -1804,7 +1794,7 @@
       <column comment="" key="false" length="10" name="Inventory_Posting_Group" nullable="false" originalDbColumnName="Inventory Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Shelf_No_" nullable="false" originalDbColumnName="Shelf No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Item_Disc__Group" nullable="false" originalDbColumnName="Item Disc_ Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Allow_Invoice_Disc_" nullable="false" originalDbColumnName="Allow Invoice Disc_" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Allow_Invoice_Disc_" nullable="false" originalDbColumnName="Allow Invoice Disc_" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Statistics_Group" nullable="false" originalDbColumnName="Statistics Group" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Commission_Group" nullable="false" originalDbColumnName="Commission Group" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Unit_Price" nullable="false" originalDbColumnName="Unit Price" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
@@ -1815,8 +1805,8 @@
       <column comment="" defaultValue="" key="false" length="38" name="Standard_Cost" nullable="false" originalDbColumnName="Standard Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Last_Direct_Cost" nullable="false" originalDbColumnName="Last Direct Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Indirect_Cost__" nullable="false" originalDbColumnName="Indirect Cost _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Cost_is_Adjusted" nullable="false" originalDbColumnName="Cost is Adjusted" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Allow_Online_Adjustment" nullable="false" originalDbColumnName="Allow Online Adjustment" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Cost_is_Adjusted" nullable="false" originalDbColumnName="Cost is Adjusted" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Allow_Online_Adjustment" nullable="false" originalDbColumnName="Allow Online Adjustment" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Vendor_No_" nullable="false" originalDbColumnName="Vendor No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Vendor_Item_No_" nullable="false" originalDbColumnName="Vendor Item No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Lead_Time_Calculation" nullable="false" originalDbColumnName="Lead Time Calculation" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1839,14 +1829,14 @@
       <column comment="" defaultValue="" key="false" length="38" name="Budget_Quantity" nullable="false" originalDbColumnName="Budget Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Budgeted_Amount" nullable="false" originalDbColumnName="Budgeted Amount" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Budget_Profit" nullable="false" originalDbColumnName="Budget Profit" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Blocked" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Blocked" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Last_Date_Modified" nullable="false" originalDbColumnName="Last Date Modified" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Price_Includes_VAT" nullable="false" originalDbColumnName="Price Includes VAT" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Price_Includes_VAT" nullable="false" originalDbColumnName="Price Includes VAT" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="VAT_Bus__Posting_Gr___Price" nullable="false" originalDbColumnName="VAT Bus_ Posting Gr_ (Price)" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Gen__Prod__Posting_Group" nullable="false" originalDbColumnName="Gen_ Prod_ Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="INT" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="INT" type="id_List" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Country_Region_of_Origin_Code" nullable="false" originalDbColumnName="Country_Region of Origin Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Automatic_Ext__Texts" nullable="false" originalDbColumnName="Automatic Ext_ Texts" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Automatic_Ext__Texts" nullable="false" originalDbColumnName="Automatic Ext_ Texts" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="No__Series" nullable="false" originalDbColumnName="No_ Series" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Tax_Group_Code" nullable="false" originalDbColumnName="Tax Group Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="VAT_Prod__Posting_Group" nullable="false" originalDbColumnName="VAT Prod_ Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1860,7 +1850,7 @@
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Material_Cost" nullable="false" originalDbColumnName="Rolled-up Material Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Capacity_Cost" nullable="false" originalDbColumnName="Rolled-up Capacity Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Scrap__" nullable="false" originalDbColumnName="Scrap _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Inventory_Value_Zero" nullable="false" originalDbColumnName="Inventory Value Zero" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Inventory_Value_Zero" nullable="false" originalDbColumnName="Inventory Value Zero" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Discrete_Order_Quantity" nullable="false" originalDbColumnName="Discrete Order Quantity" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Minimum_Order_Quantity" nullable="false" originalDbColumnName="Minimum Order Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Maximum_Order_Quantity" nullable="false" originalDbColumnName="Maximum Order Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
@@ -1874,11 +1864,11 @@
       <column comment="" key="false" length="10" name="Purch__Unit_of_Measure" nullable="false" originalDbColumnName="Purch_ Unit of Measure" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Time_Bucket" nullable="false" originalDbColumnName="Time Bucket" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Reordering_Policy" nullable="false" originalDbColumnName="Reordering Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Include_Inventory" nullable="false" originalDbColumnName="Include Inventory" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Include_Inventory" nullable="false" originalDbColumnName="Include Inventory" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Manufacturing_Policy" nullable="false" originalDbColumnName="Manufacturing Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Manufacturer_Code" nullable="false" originalDbColumnName="Manufacturer Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Item_Category_Code" nullable="false" originalDbColumnName="Item Category Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Created_From_Nonstock_Item" nullable="false" originalDbColumnName="Created From Nonstock Item" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Created_From_Nonstock_Item" nullable="false" originalDbColumnName="Created From Nonstock Item" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Product_Group_Code" nullable="false" originalDbColumnName="Product Group Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Item_Group" nullable="false" originalDbColumnName="Service Item Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Item_Tracking_Code" nullable="false" originalDbColumnName="Item Tracking Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1890,7 +1880,7 @@
       <column comment="" key="false" length="10" name="Phys_Invt_Counting_Period_Code" nullable="false" originalDbColumnName="Phys Invt Counting Period Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Last_Counting_Period_Update" nullable="false" originalDbColumnName="Last Counting Period Update" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="Next_Counting_Period" nullable="false" originalDbColumnName="Next Counting Period" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Use_Cross_Docking" nullable="false" originalDbColumnName="Use Cross-Docking" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Use_Cross_Docking" nullable="false" originalDbColumnName="Use Cross-Docking" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Duty_Class" nullable="false" originalDbColumnName="Duty Class" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Last_Vendor_Quote" nullable="false" originalDbColumnName="Last Vendor Quote" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Routing_No_" nullable="false" originalDbColumnName="Routing No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1905,7 +1895,7 @@
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Mfg__Ovhd_Cost" nullable="false" originalDbColumnName="Rolled-up Mfg_ Ovhd Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Cap__Overhead_Cost" nullable="false" originalDbColumnName="Rolled-up Cap_ Overhead Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Order_Tracking_Policy" nullable="false" originalDbColumnName="Order Tracking Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Critical" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Critical" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Common_Item_No_" nullable="false" originalDbColumnName="Common Item No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="Application_Wksh__User_ID" nullable="false" originalDbColumnName="Application Wksh_ User ID" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Assembly_Policy" nullable="false" originalDbColumnName="Assembly Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -1929,7 +1919,7 @@
       <column comment="" defaultValue="" key="false" length="38" name="Width" nullable="false" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Height" nullable="false" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Building" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Key_Item_for_Freight_Alloc_" nullable="false" originalDbColumnName="Key Item for Freight Alloc_" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Key_Item_for_Freight_Alloc_" nullable="false" originalDbColumnName="Key Item for Freight Alloc_" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="255" name="timestamp" nullable="false" originalLength="255" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1943,7 +1933,7 @@
       <column comment="" key="false" length="10" name="Inventory_Posting_Group" nullable="false" originalDbColumnName="Inventory Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Shelf_No_" nullable="false" originalDbColumnName="Shelf No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Item_Disc__Group" nullable="false" originalDbColumnName="Item Disc_ Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Allow_Invoice_Disc_" nullable="false" originalDbColumnName="Allow Invoice Disc_" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Allow_Invoice_Disc_" nullable="false" originalDbColumnName="Allow Invoice Disc_" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Statistics_Group" nullable="false" originalDbColumnName="Statistics Group" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Commission_Group" nullable="false" originalDbColumnName="Commission Group" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Unit_Price" nullable="false" originalDbColumnName="Unit Price" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
@@ -1954,8 +1944,8 @@
       <column comment="" defaultValue="" key="false" length="38" name="Standard_Cost" nullable="false" originalDbColumnName="Standard Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Last_Direct_Cost" nullable="false" originalDbColumnName="Last Direct Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Indirect_Cost__" nullable="false" originalDbColumnName="Indirect Cost _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Cost_is_Adjusted" nullable="false" originalDbColumnName="Cost is Adjusted" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Allow_Online_Adjustment" nullable="false" originalDbColumnName="Allow Online Adjustment" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Cost_is_Adjusted" nullable="false" originalDbColumnName="Cost is Adjusted" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Allow_Online_Adjustment" nullable="false" originalDbColumnName="Allow Online Adjustment" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Vendor_No_" nullable="false" originalDbColumnName="Vendor No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Vendor_Item_No_" nullable="false" originalDbColumnName="Vendor Item No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Lead_Time_Calculation" nullable="false" originalDbColumnName="Lead Time Calculation" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1978,14 +1968,14 @@
       <column comment="" defaultValue="" key="false" length="38" name="Budget_Quantity" nullable="false" originalDbColumnName="Budget Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Budgeted_Amount" nullable="false" originalDbColumnName="Budgeted Amount" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Budget_Profit" nullable="false" originalDbColumnName="Budget Profit" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Blocked" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Blocked" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Last_Date_Modified" nullable="false" originalDbColumnName="Last Date Modified" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Price_Includes_VAT" nullable="false" originalDbColumnName="Price Includes VAT" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Price_Includes_VAT" nullable="false" originalDbColumnName="Price Includes VAT" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="VAT_Bus__Posting_Gr___Price" nullable="false" originalDbColumnName="VAT Bus_ Posting Gr_ (Price)" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Gen__Prod__Posting_Group" nullable="false" originalDbColumnName="Gen_ Prod_ Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="INT" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="Picture" nullable="true" originalLength="255" pattern="" precision="0" sourceType="INT" type="id_List" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Country_Region_of_Origin_Code" nullable="false" originalDbColumnName="Country_Region of Origin Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Automatic_Ext__Texts" nullable="false" originalDbColumnName="Automatic Ext_ Texts" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Automatic_Ext__Texts" nullable="false" originalDbColumnName="Automatic Ext_ Texts" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="No__Series" nullable="false" originalDbColumnName="No_ Series" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Tax_Group_Code" nullable="false" originalDbColumnName="Tax Group Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="VAT_Prod__Posting_Group" nullable="false" originalDbColumnName="VAT Prod_ Posting Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1999,7 +1989,7 @@
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Material_Cost" nullable="false" originalDbColumnName="Rolled-up Material Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Capacity_Cost" nullable="false" originalDbColumnName="Rolled-up Capacity Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Scrap__" nullable="false" originalDbColumnName="Scrap _" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Inventory_Value_Zero" nullable="false" originalDbColumnName="Inventory Value Zero" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Inventory_Value_Zero" nullable="false" originalDbColumnName="Inventory Value Zero" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Discrete_Order_Quantity" nullable="false" originalDbColumnName="Discrete Order Quantity" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Minimum_Order_Quantity" nullable="false" originalDbColumnName="Minimum Order Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Maximum_Order_Quantity" nullable="false" originalDbColumnName="Maximum Order Quantity" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
@@ -2013,11 +2003,11 @@
       <column comment="" key="false" length="10" name="Purch__Unit_of_Measure" nullable="false" originalDbColumnName="Purch_ Unit of Measure" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Time_Bucket" nullable="false" originalDbColumnName="Time Bucket" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Reordering_Policy" nullable="false" originalDbColumnName="Reordering Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Include_Inventory" nullable="false" originalDbColumnName="Include Inventory" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Include_Inventory" nullable="false" originalDbColumnName="Include Inventory" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Manufacturing_Policy" nullable="false" originalDbColumnName="Manufacturing Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Manufacturer_Code" nullable="false" originalDbColumnName="Manufacturer Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Item_Category_Code" nullable="false" originalDbColumnName="Item Category Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Created_From_Nonstock_Item" nullable="false" originalDbColumnName="Created From Nonstock Item" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Created_From_Nonstock_Item" nullable="false" originalDbColumnName="Created From Nonstock Item" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Product_Group_Code" nullable="false" originalDbColumnName="Product Group Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Item_Group" nullable="false" originalDbColumnName="Service Item Group" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Item_Tracking_Code" nullable="false" originalDbColumnName="Item Tracking Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2029,7 +2019,7 @@
       <column comment="" key="false" length="10" name="Phys_Invt_Counting_Period_Code" nullable="false" originalDbColumnName="Phys Invt Counting Period Code" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="Last_Counting_Period_Update" nullable="false" originalDbColumnName="Last Counting Period Update" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="Next_Counting_Period" nullable="false" originalDbColumnName="Next Counting Period" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Use_Cross_Docking" nullable="false" originalDbColumnName="Use Cross-Docking" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Use_Cross_Docking" nullable="false" originalDbColumnName="Use Cross-Docking" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Duty_Class" nullable="false" originalDbColumnName="Duty Class" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Last_Vendor_Quote" nullable="false" originalDbColumnName="Last Vendor Quote" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Routing_No_" nullable="false" originalDbColumnName="Routing No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2044,7 +2034,7 @@
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Mfg__Ovhd_Cost" nullable="false" originalDbColumnName="Rolled-up Mfg_ Ovhd Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Rolled_up_Cap__Overhead_Cost" nullable="false" originalDbColumnName="Rolled-up Cap_ Overhead Cost" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Order_Tracking_Policy" nullable="false" originalDbColumnName="Order Tracking Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Critical" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Critical" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Common_Item_No_" nullable="false" originalDbColumnName="Common Item No_" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="Application_Wksh__User_ID" nullable="false" originalDbColumnName="Application Wksh_ User ID" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Assembly_Policy" nullable="false" originalDbColumnName="Assembly Policy" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -2068,14 +2058,13 @@
       <column comment="" defaultValue="" key="false" length="38" name="Width" nullable="false" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="38" name="Height" nullable="false" originalLength="-1" pattern="" precision="20" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Building" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="Key_Item_for_Freight_Alloc_" nullable="false" originalDbColumnName="Key Item for Freight Alloc_" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Short" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Key_Item_for_Freight_Alloc_" nullable="false" originalDbColumnName="Key Item for Freight Alloc_" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_5"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -2402,7 +2391,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_4"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -3124,7 +3112,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_7"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -3187,7 +3174,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="768" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_6"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -3293,7 +3279,6 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/ITAdmin/workspace/MTI_LOB_CrossRef.xlsx&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:YAuI+w7r44MjMsEdyoGglmzQP9ZUxltTUrSeJMn4"/>
@@ -3366,7 +3351,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="1056" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_7"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -3444,7 +3428,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_8"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -3513,7 +3496,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="768" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_8"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -3633,7 +3615,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_9"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -3774,7 +3755,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="768" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_9"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -4062,7 +4042,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_10"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -4110,7 +4089,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="768" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_10"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -4181,7 +4159,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -4346,7 +4323,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="1056" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_11"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -4690,7 +4666,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_12"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -4738,7 +4713,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="1056" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_12"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -4809,7 +4783,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_13"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -4866,7 +4839,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="13" posX="1056" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_13"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -6668,77 +6640,62 @@
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="outto_ESG_MariaDB" lineStyle="0" metaname="outto_ESG_MariaDB" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="outto_ESG_MariaDB"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tDBOutput_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBOutput_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tDBOutput_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tDBOutput_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tDBInput_8" offsetLabelX="0" offsetLabelY="0" source="tDBInput_8" target="tDBOutput_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tDBInput_9" offsetLabelX="0" offsetLabelY="0" source="tDBInput_9" target="tDBOutput_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tDBInput_10" offsetLabelX="0" offsetLabelY="0" source="tDBInput_10" target="tDBOutput_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
   </connection>
   <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tDBInput_11" offsetLabelX="0" offsetLabelY="0" source="tDBInput_11" target="tDBOutput_11">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
   </connection>
   <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_12" offsetLabelX="0" offsetLabelY="0" source="tDBInput_12" target="tDBOutput_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row13"/>
   </connection>
   <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tDBInput_13" offsetLabelX="0" offsetLabelY="0" source="tDBInput_13" target="tDBOutput_13">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row14"/>
   </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tDBInput_14" offsetLabelX="0" offsetLabelY="0" source="tDBInput_14" target="tDBOutput_14">
@@ -6843,13 +6800,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_20426de1-214a-419e-8cd3-977e1124724f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vLC1zhRkG/tPAuuDWKdssZIOh7uVGccaZ2Z/SufpN/sdN9MyaXmeVPKo0W90PLjzMhWlGJ21Jw+q&#13;
-vq+vJEop9Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b3cb42ef-ece9-4885-8dc7-da7bd054734d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>js2+TnOE+kGM7MEz7c/wVpeDowYa7upXM74JnBHwSgj107A2ygT4sghk+3029X22cvCXF2RvtjE4&#13;
-rGYlMHZwoQ==</DigestValue></Reference></SignedInfo><SignatureValue>ChFap/T9fiEtApLd5sDrsKiHelBRE6yqfN4Hoz8gyJ9CzNaMEqy/9xuDi3uljokb9M+ejnDhya3D&#13;
-xQocRp66D8z2yHbmeZwdFR/tnC52A61CSPex1WIc1NdF0HsDNT+1wopmkXSKuSDeHUdO7GoZD5zO&#13;
-cncwmboV2v97s4VG0MBWen5CH8LvvjPerFkHt6eSaZIF0Se84/Lix9Bq/zSghmkMNFmA73LohDNH&#13;
-3t7JjhGveDhg4LyMKVtZXoGikeEeic+84om1416OUDxBnZadyIdc9kLPT/AaWOssHQ0rW3Ns3yO1&#13;
-DALhUIMcDNj+yQkgMJFFElFfIUZBFDVxLI2Dwg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_94dde834-183d-4d45-b564-c58fe0781d4d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QQauqFHfLGICjnXF+tgpNgvNu0j28LRdZYlJ50wt3FQQFaCXfC5HDjVVhyi3UueIrTH26P24XobE&#13;
+z1+whHynnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5f932147-2b10-47b7-a5b7-96b61910682e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cmnLym1/XCIIVOs/qfHjWZfV5CLAAev7NG5HrS6f7ABOBVU6OiUzMXLXRBycZKW/KlYdVHp5P3Bj&#13;
+/WQU95YFEA==</DigestValue></Reference></SignedInfo><SignatureValue>n6x5SfUduerzv//ja3KCrJKFsdawx9B9Cy+F4J1oaQRu6SArF/Z/yRlAme3BfBTfrSNAdAYpODax&#13;
+DDu5cAwCzXQX26BwoSPcGTVGmjwFwuz2PNP5+tW/dh0deGsbddcE0qMKuMZl1xmPX0AMlq5RADKo&#13;
+5WdlMP+p2h7Iguu+Ipnof55FYvOj0Pse5cYq5ZyXEeeJMXlvJ6CR7wl0Eb69InTn/W/cWajw5ugf&#13;
+G9IEi1Nf9ffHfKfGji9BR4utXLU5NSxvQ8TrWE9cZQuTzukv8DZZ0LPWt9Q502inkgkJzxtgHR0p&#13;
+bts6j7VbsqFMDhYyQ1NhxQ6NvP4mhHHzH48QYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -6871,4 +6828,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b3cb42ef-ece9-4885-8dc7-da7bd054734d" Target="#_20426de1-214a-419e-8cd3-977e1124724f"><Timestamp>2024-06-19 10:45:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5f932147-2b10-47b7-a5b7-96b61910682e" Target="#_94dde834-183d-4d45-b564-c58fe0781d4d"><Timestamp>2024-09-16 12:01:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
