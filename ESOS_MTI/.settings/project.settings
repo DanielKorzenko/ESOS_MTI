@@ -109,7 +109,7 @@
         "show" : true,
         "field" : "CLOSED_LIST",
         "name" : "DB_TYPE",
-        "value" : "JDBCOutput",
+        "value" : "tJDBCOutput",
         "contextMode" : false
       }, {
         "show" : true,
