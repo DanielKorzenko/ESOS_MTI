@@ -615,7 +615,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT [ID]&#13;&#10;      ,[Production_Line_Code]&#13;&#10;      ,[Production_Line_Description]&#13;&#10;      ,[Area_Name]&#13;&#10;      ,[Sales_Order]&#13;&#10;      ,[SKU]&#13;&#10;&#9;  , (case when left(Sku,2) = 51 then Left(SKU,3) when LEFT(SKU, 3) = 530 then LEFT(SKU,3) else Left(SKU,4) end) as shortcode&#13;&#10;      ,[Date]&#13;&#10;  FROM [SPOT].[dbo].[MX_MTI_ProductionLogs]&#13;&#10;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT  distinct [ID]&#13;&#10;      ,[Production_Line_Code]&#13;&#10;      ,[Production_Line_Description]&#13;&#10;      ,[Area_Name]&#13;&#10;      ,LTRIM(RTRIM([Sales_Order])) as Sales_Order&#13;&#10;      ,[SKU]&#13;&#10;&#9;  , (case when left(Sku,2) = '51' then Left(SKU,3) when LEFT(SKU, 3) = '530' then LEFT(SKU,3) else Left(SKU,4) end) as shortcode&#13;&#10;      ,[Date]&#13;&#10;  FROM [SPOT].[dbo].[MX_MTI_ProductionLogs]&#13;&#10;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -648,7 +648,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Marmite_SRV007SQL1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_5">
-      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Area_Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
@@ -673,7 +673,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Area_Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="NCHAR" type="id_String" usefulColumn="true"/>
@@ -688,7 +687,6 @@
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row5.ID" name="ID" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row5.Production_Line_Code" name="Production_Line_Code" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.Production_Line_Description" name="Production_Line_Description" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.Area_Name" name="Area_Name" nullable="true" type="id_String"/>
@@ -830,16 +828,6 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Production_Line_Code"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Production_Line_Description"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -890,8 +878,6 @@
     <elementParameter field="TEXT" name="LABEL" value="MariaDB_ESGroup_ESG"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_5">
-      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Production_Line_Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Area_Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Sales_Order" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -902,8 +888,6 @@
       <column comment="" key="false" length="23" name="Date" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Production_Line_Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Production_Line_Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Area_Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Sales_Order" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1331,16 +1315,6 @@
   </node>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMysqlRow"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MySQL"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMysqlRow"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -1379,16 +1353,6 @@
   </node>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_2"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMysqlRow"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MySQL"/>
-    <elementParameter field="CHECK" name="START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMysqlRow"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TQLyoM4UEe2ly-ax8NCabw"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -1404,7 +1368,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;CREATE TABLE V_MX_WIP_vs_Orders AS&#13;&#10;WITH&#13;&#10;-- Krok 1: Pobranie zamówień&#13;&#10;Orders AS (&#13;&#10;    SELECT &#13;&#10;        mpo.`Document No_`,&#13;&#10;        mpo.`Expected Receipt Date`,&#13;&#10;        mpo.SKU,&#13;&#10;        mpo.Description,&#13;&#10;        mpo.order_by, &#13;&#10;        COUNT(mpo.SKU) AS Order_Count&#13;&#10;    FROM &#13;&#10;        MX_ProductionOrders mpo &#13;&#10;    WHERE &#13;&#10;        mpo.SKU IS NOT NULL&#13;&#10;    GROUP BY  &#13;&#10;        mpo.`Document No_`, &#13;&#10;        mpo.`Expected Receipt Date`, &#13;&#10;        mpo.SKU, &#13;&#10;        mpo.Description, &#13;&#10;        mpo.order_by &#13;&#10;),&#13;&#10;-- Krok 2: Zliczenie dostępnych zasobów WIP&#13;&#10;WIP AS (&#13;&#10;    SELECT &#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Total_WIP_Count&#13;&#10;    FROM &#13;&#10;        MX_ProductionLogs pl&#13;&#10;    LEFT JOIN &#13;&#10;        MX_SKU_Definition msd  &#13;&#10;            ON TRIM(pl.SKU) = TRIM(msd.MMT_MTI_Code)&#13;&#10;    WHERE &#13;&#10;        pl.Area_Name NOT IN ('Packaging', 'Shipping')&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY &#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 3: Zliczenie ilości w Packaging&#13;&#10;Packaging AS (&#13;&#10;    SELECT&#13;&#10;        pl.Sales_Order AS `Document No_`,&#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Packaging_Count&#13;&#10;    FROM&#13;&#10;        MX_ProductionLogs pl&#13;&#10;    WHERE&#13;&#10;        pl.Area_Name = 'Packaging'&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY&#13;&#10;        pl.Sales_Order,&#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 4: Zliczenie ilości w Shipping&#13;&#10;Shipping AS (&#13;&#10;    SELECT&#13;&#10;        pl.Sales_Order AS `Document No_`,&#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Shipping_Count&#13;&#10;    FROM&#13;&#10;        MX_ProductionLogs pl&#13;&#10;    WHERE&#13;&#10;        pl.Area_Name = 'Shipping'&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY&#13;&#10;        pl.Sales_Order,&#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 5: Połączenie danych&#13;&#10;Orders_With_Data AS (&#13;&#10;    SELECT&#13;&#10;        o.*,&#13;&#10;        COALESCE(w.Total_WIP_Count, 0) AS Total_WIP_Count,&#13;&#10;        COALESCE(p.Packaging_Count, 0) AS Packaging_Count,&#13;&#10;        COALESCE(s.Shipping_Count, 0) AS Shipping_Count&#13;&#10;    FROM&#13;&#10;        Orders o&#13;&#10;    LEFT JOIN&#13;&#10;        WIP w ON o.SKU = w.SKU&#13;&#10;    LEFT JOIN&#13;&#10;        Packaging p ON o.`Document No_` = p.`Document No_` AND o.SKU = p.SKU&#13;&#10;    LEFT JOIN&#13;&#10;        Shipping s ON o.`Document No_` = s.`Document No_` AND o.SKU = s.SKU&#13;&#10;),&#13;&#10;-- Krok 6: Obliczenie Adjusted_Order_Count&#13;&#10;Orders_Adjusted AS (&#13;&#10;    SELECT&#13;&#10;        owd.*,&#13;&#10;        GREATEST(owd.Order_Count - owd.Packaging_Count - owd.Shipping_Count, 0) AS Adjusted_Order_Count&#13;&#10;    FROM&#13;&#10;        Orders_With_Data owd&#13;&#10;),&#13;&#10;-- Krok 7: Obliczenie skumulowanej Adjusted_Order_Count&#13;&#10;Orders_Cumulative AS (&#13;&#10;    SELECT&#13;&#10;        oa.*,&#13;&#10;        SUM(oa.Adjusted_Order_Count) OVER (&#13;&#10;            PARTITION BY oa.SKU &#13;&#10;            ORDER BY oa.`Expected Receipt Date`, oa.`Document No_` &#13;&#10;            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW&#13;&#10;        ) AS Cumulative_Adjusted_Order_Count&#13;&#10;    FROM&#13;&#10;        Orders_Adjusted oa&#13;&#10;),&#13;&#10;-- Krok 8: Alokacja WIP na podstawie Adjusted_Order_Count&#13;&#10;Allocation_Result AS (&#13;&#10;    SELECT&#13;&#10;        o.*,&#13;&#10;        CASE&#13;&#10;            WHEN o.Cumulative_Adjusted_Order_Count &lt;= o.Total_WIP_Count THEN o.Adjusted_Order_Count&#13;&#10;            WHEN o.Cumulative_Adjusted_Order_Count - o.Adjusted_Order_Count &lt; o.Total_WIP_Count THEN o.Total_WIP_Count - (o.Cumulative_Adjusted_Order_Count - o.Adjusted_Order_Count)&#13;&#10;            ELSE 0&#13;&#10;        END AS Allocated_WIP_Count&#13;&#10;    FROM&#13;&#10;        Orders_Cumulative o&#13;&#10;)&#13;&#10;-- Krok 9: Ostateczne wyniki&#13;&#10;SELECT&#13;&#10;    ar.`Document No_`,&#13;&#10;    ar.`Expected Receipt Date`,&#13;&#10;    ar.SKU,&#13;&#10;    ar.Description,&#13;&#10;    ar.order_by,&#13;&#10;    ar.Order_Count,&#13;&#10;    ar.Packaging_Count,&#13;&#10;    ar.Shipping_Count,&#13;&#10;    ar.Adjusted_Order_Count,&#13;&#10;    ar.Allocated_WIP_Count&#13;&#10;FROM&#13;&#10;    Allocation_Result ar&#13;&#10;ORDER BY&#13;&#10;    ar.SKU, ar.`Expected Receipt Date`;&#13;&#10;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;CREATE TABLE V_MX_WIP_vs_Orders AS&#13;&#10;WITH&#13;&#10;-- Krok 1: Pobranie zamówień&#13;&#10;Orders AS (&#13;&#10;    SELECT &#13;&#10;        mpo.`Document No_`,&#13;&#10;        mpo.`Expected Receipt Date`,&#13;&#10;        mpo.SKU,&#13;&#10;        mpo.Description,&#13;&#10;        mpo.order_by, &#13;&#10;        SUM(mpo.Qty) AS Order_Count&#13;&#10;    FROM &#13;&#10;        MX_ProductionOrders mpo &#13;&#10;    WHERE &#13;&#10;        mpo.SKU IS NOT NULL&#13;&#10;    GROUP BY  &#13;&#10;        mpo.`Document No_`, &#13;&#10;        mpo.`Expected Receipt Date`, &#13;&#10;        mpo.SKU, &#13;&#10;        mpo.Description, &#13;&#10;        mpo.order_by &#13;&#10;),&#13;&#10;-- Krok 2: Zliczenie dostępnych zasobów WIP&#13;&#10;WIP AS (&#13;&#10;    SELECT &#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Total_WIP_Count&#13;&#10;    FROM &#13;&#10;        MX_ProductionLogs pl&#13;&#10;    LEFT JOIN &#13;&#10;        MX_SKU_Definition msd  &#13;&#10;            ON TRIM(pl.SKU) = TRIM(msd.MMT_MTI_Code)&#13;&#10;    WHERE &#13;&#10;        pl.Area_Name NOT IN ('Packaging', 'Shipping')&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY &#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 3: Zliczenie ilości w Packaging&#13;&#10;Packaging AS (&#13;&#10;    SELECT&#13;&#10;        pl.Sales_Order AS `Document No_`,&#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Packaging_Count&#13;&#10;    FROM&#13;&#10;        MX_ProductionLogs pl&#13;&#10;    WHERE&#13;&#10;        pl.Area_Name = 'Packaging'&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY&#13;&#10;        pl.Sales_Order,&#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 4: Zliczenie ilości w Shipping&#13;&#10;Shipping AS (&#13;&#10;    SELECT&#13;&#10;        pl.Sales_Order AS `Document No_`,&#13;&#10;        pl.SKU,&#13;&#10;        COUNT(pl.Barcode) AS Shipping_Count&#13;&#10;    FROM&#13;&#10;        MX_ProductionLogs pl&#13;&#10;    WHERE&#13;&#10;        pl.Area_Name = 'Shipping'&#13;&#10;        AND pl.SKU IS NOT NULL&#13;&#10;    GROUP BY&#13;&#10;        pl.Sales_Order,&#13;&#10;        pl.SKU&#13;&#10;),&#13;&#10;-- Krok 5: Połączenie danych&#13;&#10;Orders_With_Data AS (&#13;&#10;    SELECT&#13;&#10;        o.*,&#13;&#10;        COALESCE(w.Total_WIP_Count, 0) AS Total_WIP_Count,&#13;&#10;        COALESCE(p.Packaging_Count, 0) AS Packaging_Count,&#13;&#10;        COALESCE(s.Shipping_Count, 0) AS Shipping_Count&#13;&#10;    FROM&#13;&#10;        Orders o&#13;&#10;    LEFT JOIN&#13;&#10;        WIP w ON o.SKU = w.SKU&#13;&#10;    LEFT JOIN&#13;&#10;        Packaging p ON o.`Document No_` = p.`Document No_` AND o.SKU = p.SKU&#13;&#10;    LEFT JOIN&#13;&#10;        Shipping s ON o.`Document No_` = s.`Document No_` AND o.SKU = s.SKU&#13;&#10;),&#13;&#10;-- Krok 6: Obliczenie Adjusted_Order_Count&#13;&#10;Orders_Adjusted AS (&#13;&#10;    SELECT&#13;&#10;        owd.*,&#13;&#10;        GREATEST(owd.Order_Count - owd.Packaging_Count - owd.Shipping_Count, 0) AS Adjusted_Order_Count&#13;&#10;    FROM&#13;&#10;        Orders_With_Data owd&#13;&#10;),&#13;&#10;-- Krok 7: Obliczenie skumulowanej Adjusted_Order_Count&#13;&#10;Orders_Cumulative AS (&#13;&#10;    SELECT&#13;&#10;        oa.*,&#13;&#10;        SUM(oa.Adjusted_Order_Count) OVER (&#13;&#10;            PARTITION BY oa.SKU &#13;&#10;            ORDER BY oa.`Expected Receipt Date`, oa.`Document No_` &#13;&#10;            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW&#13;&#10;        ) AS Cumulative_Adjusted_Order_Count&#13;&#10;    FROM&#13;&#10;        Orders_Adjusted oa&#13;&#10;),&#13;&#10;-- Krok 8: Alokacja WIP na podstawie Adjusted_Order_Count&#13;&#10;Allocation_Result AS (&#13;&#10;    SELECT&#13;&#10;        o.*,&#13;&#10;        CASE&#13;&#10;            WHEN o.Cumulative_Adjusted_Order_Count &lt;= o.Total_WIP_Count THEN o.Adjusted_Order_Count&#13;&#10;            WHEN o.Cumulative_Adjusted_Order_Count - o.Adjusted_Order_Count &lt; o.Total_WIP_Count THEN o.Total_WIP_Count - (o.Cumulative_Adjusted_Order_Count - o.Adjusted_Order_Count)&#13;&#10;            ELSE 0&#13;&#10;        END AS Allocated_WIP_Count&#13;&#10;    FROM&#13;&#10;        Orders_Cumulative o&#13;&#10;),&#13;&#10;-- Krok 9: Obliczenie pozostałego WIP&#13;&#10;Total_Allocated_WIP AS (&#13;&#10;    SELECT&#13;&#10;        SKU,&#13;&#10;        SUM(Allocated_WIP_Count) AS Total_Allocated_WIP&#13;&#10;    FROM&#13;&#10;        Allocation_Result&#13;&#10;    GROUP BY&#13;&#10;        SKU&#13;&#10;),&#13;&#10;Remaining_WIP AS (&#13;&#10;    SELECT&#13;&#10;        w.SKU,&#13;&#10;        w.Total_WIP_Count,&#13;&#10;        COALESCE(taw.Total_Allocated_WIP, 0) AS Total_Allocated_WIP,&#13;&#10;        w.Total_WIP_Count - COALESCE(taw.Total_Allocated_WIP, 0) AS Remaining_WIP_Count&#13;&#10;    FROM&#13;&#10;        WIP w&#13;&#10;    LEFT JOIN&#13;&#10;        Total_Allocated_WIP taw ON w.SKU = taw.SKU&#13;&#10;),&#13;&#10;Free_Stock AS (&#13;&#10;    SELECT&#13;&#10;        'free stock' AS `Document No_`,&#13;&#10;        NULL AS `Expected Receipt Date`,&#13;&#10;        rw.SKU,&#13;&#10;        NULL AS Description,&#13;&#10;        NULL AS order_by,&#13;&#10;        NULL AS Order_Count,&#13;&#10;        0 AS Packaging_Count,&#13;&#10;        0 AS Shipping_Count,&#13;&#10;        0 AS Adjusted_Order_Count,&#13;&#10;        rw.Remaining_WIP_Count AS Allocated_WIP_Count&#13;&#10;    FROM&#13;&#10;        Remaining_WIP rw&#13;&#10;    WHERE&#13;&#10;        rw.Remaining_WIP_Count &gt; 0&#13;&#10;)&#13;&#10;-- Krok 10: Ostateczne wyniki&#13;&#10;SELECT&#13;&#10;    ar.`Document No_`,&#13;&#10;    ar.`Expected Receipt Date`,&#13;&#10;    ar.SKU,&#13;&#10;    ar.Description,&#13;&#10;    ar.order_by,&#13;&#10;    ar.Order_Count,&#13;&#10;    ar.Packaging_Count,&#13;&#10;    ar.Shipping_Count,&#13;&#10;    ar.Adjusted_Order_Count,&#13;&#10;    ar.Allocated_WIP_Count&#13;&#10;FROM&#13;&#10;    Allocation_Result ar&#13;&#10;UNION ALL&#13;&#10;SELECT&#13;&#10;    fs.`Document No_`,&#13;&#10;    fs.`Expected Receipt Date`,&#13;&#10;    fs.SKU,&#13;&#10;    fs.Description,&#13;&#10;    fs.order_by,&#13;&#10;    fs.Order_Count,&#13;&#10;    fs.Packaging_Count,&#13;&#10;    fs.Shipping_Count,&#13;&#10;    fs.Adjusted_Order_Count,&#13;&#10;    fs.Allocated_WIP_Count&#13;&#10;FROM&#13;&#10;    Free_Stock fs&#13;&#10;ORDER BY&#13;&#10;    SKU, `Expected Receipt Date`;&#13;&#10;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1545,13 +1509,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9cee9b81-9eca-4491-9099-f0e758b12024"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cXl+5x/eXOMn2ZDPQe/WFG3AVhaTNM/POF20TEHOgs5SogpMiqxMLhSX+a6zgCxt2xCeYuaNKDWp&#13;
-G4MMPzxA/A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b0446133-9b2c-447f-838b-ed5a12113dd4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Pu4A48lktj8PfoLjbHJiJ/Tkep+U4HBM/xlITzI9NBBukyrQAGXvXxFTMeaLW4mmz1kVMPxLe6iX&#13;
-l8vePXQCuA==</DigestValue></Reference></SignedInfo><SignatureValue>lUisNDDmZgVykRPNo8FyDTlxmarGuDYc5XNI4jds5LxdeSK23bZeKCCHurt6WJPcGR3eWUSRzL0X&#13;
-lPJF9FMgy7b+fT1tOmVF+6dYeeT0uIb8ihpiRnV/NIamvSK9GV5uUu42JDzsqznlTYMcWVYLYhj4&#13;
-T7LfRR/hk3xvX+c1NC3NcydCx88LDr1jEHsjMSH/d2Q6NMXtwe7vIfZ1phYOWTz8s8zKjpA5C0+Z&#13;
-+GgBCwsqZjbPLW7IZJuY5UKYmLzA/4XEc4dvN4cGYJeAdkZZ9FexdL4A0TUlbRVkDopALqoOH5MQ&#13;
-WgOk0NFZgdPR0l6HUkf4xYkq4icSnaJO43BnYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_daa0b3b1-d188-4bda-98f5-e6a8f51dbd07"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TuE7ePCQ/Yh/wV13wX42DZEkMZxGpquWOJMySOD0gMmJ13mlzKAe+UAi+CcZ/bQI7edrFAfULy5t&#13;
+y/4/9DwS7A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ff171b89-466d-406f-86a1-24f36aa8b5a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xLd5RbQ5QLgEBC622Vzf7hkN7htXmQVrWmUHc7XtP+5U04E2J2+1K/NDvZD5304G7ZLp7VhOgJdS&#13;
+VXW0zwS7+g==</DigestValue></Reference></SignedInfo><SignatureValue>ALpxTuOkjDXBsLdEFqA4bPfVoGWS2orQJqsCUEmDHxS8l09hzoGJDX+aKA6EP5Zz/mp7t6WfyMTZ&#13;
+gOdreYKQUduabqMC40ynVGDPnGxsGmIS9gdGNqa7yEbznOB+sEq7+VjVGWL/kNDYh5yrJRIMMK5y&#13;
+mYwzwwlcx+M75+LUA3AkZrohqdVzKQ7CtX+jNKyYwd3iicxhVadVRNV86+9io7Mu2TO+cLfw/uoI&#13;
+H3i0erhvtb+fsXtW94RPi61MENnQCvlvkwu13Huoc1sVYb4ZEOS6lJEpb5O+Q/UpmszsA91cktjp&#13;
+UwcRMfI1QVaFb9128WPbDf4ibPf5gRsx61MHvg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1573,4 +1537,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b0446133-9b2c-447f-838b-ed5a12113dd4" Target="#_9cee9b81-9eca-4491-9099-f0e758b12024"><Timestamp>2024-09-28 09:32:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ff171b89-466d-406f-86a1-24f36aa8b5a5" Target="#_daa0b3b1-d188-4bda-98f5-e6a8f51dbd07"><Timestamp>2024-10-21 08:45:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
